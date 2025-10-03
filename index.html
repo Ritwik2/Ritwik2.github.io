@@ -3,172 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritwik Verma - Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ritwik Verma | Senior Data Engineer & GCP Expert</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Custom Styling for Inter Font, Smooth Scroll, and Dark Mode */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .header-sticky {
+            backdrop-filter: blur(10px);
+            background-color: rgba(17, 24, 39, 0.8); /* dark-blue with transparency */
+        }
+        /* Style for the profile picture holder */
+        .profile-placeholder {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3b82f6; /* blue-500 */
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-placeholder:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>Ritwik Verma</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#resume" class="nav-link">Resume</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Navbar -->
+    <header id="header" class="sticky top-0 z-50 transition duration-300">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-blue-400">
+                Ritwik Verma
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="text-gray-300 hover:text-blue-400 transition duration-150">Home</a>
+                <a href="#journey" class="text-gray-300 hover:text-blue-400 transition duration-150">My Journey</a>
+                <a href="#skills" class="text-gray-300 hover:text-blue-400 transition duration-150">Skills</a>
+                <a href="#experience" class="text-gray-300 hover:text-blue-400 transition duration-150">Experience</a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-150">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile Menu Button Placeholder -->
+                <button class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Ritwik Verma</span>
+        <section id="home" class="py-20 md:py-32 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-3/5">
+                <p class="text-lg text-blue-400 mb-2 font-semibold">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-4">
+                    Ritwik Verma.
                 </h1>
-                <p class="hero-subtitle">Professional Developer & Problem Solver</p>
-                <div class="hero-buttons">
-                    <a href="#resume" class="btn btn-primary">View Resume</a>
-                    <a href="Ritwik_Verma.pdf" download class="btn btn-secondary">
-                        <i class="fas fa-download"></i> Download PDF
+                <h2 class="text-3xl md:text-4xl font-light text-gray-400 mb-6">
+                    Senior Data Engineer | <span class="text-yellow-400">GCP Certified Expert</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                    With **5.10 Years of experience**, I architect and build highly scalable, cost-optimized data solutions on the **Google Cloud Platform**, driving data-driven decision-making for complex systems.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#experience" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                        View Projects
+                    </a>
+                    <a href="Ritwik_Verma.pdf" download class="px-6 py-3 border border-blue-600 text-blue-400 font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                        <i class="fas fa-download mr-2"></i> Download Resume
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user"></i>
-                </div>
+            <div class="md:w-2/5 mt-10 md:mt-0 flex justify-center">
+                <!-- Replace 'profile.jpg' with your actual image URL -->
+                <img src="https://placehold.co/250x250/1f2937/9ca3af?text=Your+Profile+Photo" alt="Ritwik Verma Profile" class="profile-placeholder shadow-xl">
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Welcome to my professional portfolio. I am passionate about creating innovative solutions 
-                            and delivering high-quality results. My experience spans various technologies and domains, 
-                            allowing me to approach challenges with a comprehensive perspective.
-                        </p>
-                        <p>
-                            Below you can view my complete resume in an interactive format or download the PDF version 
-                            for your convenience.
-                        </p>
+        <!-- Separator -->
+        <div class="border-t border-gray-700 my-12"></div>
+
+        <!-- My Data Engineering Journey Section -->
+        <section id="journey" class="py-12">
+            <h2 class="text-4xl font-bold text-blue-400 mb-8 text-center">My Data Engineering Journey</h2>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-6">
+                    My fascination with **data and statistics** began early, driven by a desire to understand the hidden patterns and narratives within complex numbers. This deep-seated curiosity laid the groundwork for my career, viewing data not just as information, but as the raw potential for **intelligent, scalable systems**.
+                </p>
+                <p class="text-lg text-gray-300 mb-6 font-medium">
+                    This enthusiasm evolved into a professional specialization in **Data Engineering** on the **Google Cloud Platform (GCP)**. My work focuses on architecting and building high-performance pipelines that can manage and process **petabytes of data**, transforming abstract potential into real-world business value and significant performance gains.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-8 text-sm">
+                    <div class="p-4 bg-gray-700 rounded-lg">
+                        <i class="fas fa-brain text-xl text-yellow-400 mr-2"></i>
+                        <span class="font-semibold text-white">Phase 1: Foundational Exploration</span>: Early focus on data flow and logic, creating robust, scalable foundational systems designed to handle high-volume data transactions.
+                    </div>
+                    <div class="p-4 bg-gray-700 rounded-lg">
+                        <i class="fas fa-cloud text-xl text-blue-400 mr-2"></i>
+                        <span class="font-semibold text-white">Phase 2: Cloud Specialization</span>: Deep diving into full-stack Data Engineering, advanced GCP architecture, Big Data processing (Spark, Dataflow), and modern Data Lake governance.
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="resume-section">
-            <div class="container">
-                <h2 class="section-title">My Resume</h2>
+        <!-- Separator -->
+        <div class="border-t border-gray-700 my-12"></div>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-12">
+            <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Technical Expertise & Certifications</h2>
+            <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Resume Controls -->
-                <div class="resume-controls">
-                    <div class="control-buttons">
-                        <button id="fullscreen-btn" class="control-btn" title="Fullscreen">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                        <button id="zoom-in-btn" class="control-btn" title="Zoom In">
-                            <i class="fas fa-search-plus"></i>
-                        </button>
-                        <button id="zoom-out-btn" class="control-btn" title="Zoom Out">
-                            <i class="fas fa-search-minus"></i>
-                        </button>
-                        <a href="Ritwik_Verma.pdf" download class="control-btn" title="Download PDF">
-                            <i class="fas fa-download"></i>
-                        </a>
-                        <a href="Ritwik_Verma.pdf" target="_blank" class="control-btn" title="Open in New Tab">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
+                <!-- Card 1: GCP Services -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-4"><i class="fab fa-google mr-2 text-blue-400"></i> Google Cloud Platform</h3>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                        <li>**Core Services**: BigQuery, Dataflow, Dataproc (Spark)</li>
+                        <li>**Data Movement**: Pub/Sub, Cloud Storage, Dataflow</li>
+                        <li>**Deployment/Ops**: Cloud Run, Cloud Function, Kubernetes, IAM</li>
+                        <li>**Databases**: Cloud SQL, ElasticSearch</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-yellow-400 font-medium">
+                        <i class="fas fa-award mr-1"></i> GCP Professional Data Engineer Certified
+                    </p>
                 </div>
 
-                <!-- PDF Viewer -->
-                <div class="pdf-container">
-                    <div class="pdf-loading">
-                        <div class="loader"></div>
-                        <p>Loading resume...</p>
-                    </div>
-                    <iframe 
-                        id="pdf-viewer" 
-                        src="Ritwik_Verma.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH" 
-                        title="Ritwik Verma Resume"
-                        loading="lazy">
-                        <div class="pdf-fallback">
-                            <h3>PDF Viewer Not Supported</h3>
-                            <p>Your browser doesn't support PDF viewing. Please download the resume instead.</p>
-                            <a href="Ritwik_Verma.pdf" download class="btn btn-primary">
-                                <i class="fas fa-download"></i> Download Resume PDF
-                            </a>
-                        </div>
-                    </iframe>
+                <!-- Card 2: Programming & Frameworks -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-4"><i class="fas fa-terminal mr-2 text-blue-400"></i> Languages & Big Data</h3>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                        <li>**Programming**: Python, Java, SQL</li>
+                        <li>**Big Data**: Spark (PySpark), Apache Beam, Hadoop</li>
+                        <li>**Orchestration**: Apache Airflow, Dataflow Templates</li>
+                        <li>**Databases**: Oracle, Snowflake, SQLServer, NoSQL</li>
+                    </ul>
                 </div>
 
-                <!-- Alternative View for Mobile -->
-                <div class="mobile-resume-info">
-                    <div class="mobile-card">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>View My Resume</h3>
-                        <p>For the best viewing experience on mobile, please download or open in a new tab.</p>
-                        <div class="mobile-buttons">
-                            <a href="Ritwik_Verma.pdf" target="_blank" class="btn btn-primary">
-                                <i class="fas fa-eye"></i> View PDF
-                            </a>
-                            <a href="Ritwik_Verma.pdf" download class="btn btn-secondary">
-                                <i class="fas fa-download"></i> Download
-                            </a>
-                        </div>
-                    </div>
+                <!-- Card 3: Tools & Ops -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-4"><i class="fas fa-tools mr-2 text-blue-400"></i> DevOps & Control</h3>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                        <li>**Source Control**: Git, BitBucket, Jira, Confluence</li>
+                        <li>**CI/CD**: Jenkins, Maven</li>
+                        <li>**Containers**: Docker</li>
+                        <li>**Design**: Visio, Draw.io (Architecture)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-semibold text-white mb-4">Professional Certifications</h3>
+                <div class="flex flex-wrap justify-center gap-4 text-md text-gray-300">
+                    <span class="bg-gray-700 py-1 px-3 rounded-full hover:bg-blue-600 transition duration-200">Google Professional Data Engineer (2025)</span>
+                    <span class="bg-gray-700 py-1 px-3 rounded-full hover:bg-blue-600 transition duration-200">Google Professional Database Engineer (2025)</span>
+                    <span class="bg-gray-700 py-1 px-3 rounded-full hover:bg-blue-600 transition duration-200">Google Associate Cloud Engineer (2025)</span>
                 </div>
             </div>
         </section>
+
+        <!-- Separator -->
+        <div class="border-t border-gray-700 my-12"></div>
+
+        <!-- Experience & Projects Section -->
+        <section id="experience" class="py-12">
+            <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Key Projects & Experience</h2>
+
+            <!-- Experience Block 1 (Persistent Systems replacement) -->
+            <div class="relative mb-12 border-l-4 border-blue-500 pl-6">
+                <span class="absolute -left-3 top-0 h-6 w-6 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold text-white"><i class="fas fa-briefcase"></i></span>
+                <p class="text-sm font-semibold text-gray-400">Apr 2022 - Present</p>
+                <h3 class="text-3xl font-bold text-white mb-1">Senior Data Engineer</h3>
+                <p class="text-xl font-medium text-gray-300 mb-4">Persistent Systems</p>
+
+                <!-- Project 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-lg border border-gray-700">
+                    <h4 class="text-xl font-semibold text-yellow-400 mb-2">GCP Electrical Asset Location Accuracy Prediction Platform</h4>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>**Architected** and developed a **Spark** data processing solution to calculate location accuracy scores using over **5 billion photos** (drones & ground teams).</li>
+                        <li>Migrated **30 million high-resolution photos** from various sources (Sharepoint, NAS) to GCS and **Elasticsearch**, achieving significant **SaaS subscription cost savings**.</li>
+                        <li>Designed cost-optimized cloud technology stack and implemented robust **RBAC IAM provisioning**.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-lg border border-gray-700">
+                    <h4 class="text-xl font-semibold text-yellow-400 mb-2">YouTube Data Ingestion Pipeline</h4>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Developed a batch data pipeline using **Dataflow** (Apache Beam) to ingest and transform YouTube API metadata into **BigQuery** for AI/ML applications.</li>
+                        <li>Successfully migrated large **Snowflake** tables to **BigQuery** using high-performance Dataflow jobs.</li>
+                        <li>**Reduced the client's daily batch ingestion pipeline time by 50%** through optimization.</li>
+                    </ul>
+                </div>
+
+                <!-- Achievements -->
+                <div class="mt-6">
+                    <h4 class="text-lg font-semibold text-white mb-2">Awards & Recognition:</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="text-sm bg-green-900/50 text-green-400 px-3 py-1 rounded-full"><i class="fas fa-trophy mr-1"></i> Top Talent (2025)</span>
+                        <span class="text-sm bg-green-900/50 text-green-400 px-3 py-1 rounded-full"><i class="fas fa-award mr-1"></i> Bravo Individual Award (2024)</span>
+                        <span class="text-sm bg-green-900/50 text-green-400 px-3 py-1 rounded-full"><i class="fas fa-star mr-1"></i> Top Talent (2023)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Block 2 (HCL Technologies replacement) -->
+            <div class="relative mb-8 border-l-4 border-gray-500 pl-6">
+                <span class="absolute -left-3 top-0 h-6 w-6 bg-gray-500 rounded-full flex items-center justify-center text-sm font-bold text-white"><i class="fas fa-laptop-code"></i></span>
+                <p class="text-sm font-semibold text-gray-400">Oct 2019 - Mar 2022</p>
+                <h3 class="text-3xl font-bold text-white mb-1">Foundational Systems Engineer</h3>
+                <p class="text-xl font-medium text-gray-300 mb-4">HCL Tech</p>
+
+                <!-- Project -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <h4 class="text-xl font-semibold text-yellow-400 mb-2">High-Volume Data Transaction System Design</h4>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Developed high-performance **data transaction systems** for a major US quick-service restaurant chain, ensuring data accuracy and high availability.</li>
+                        <li>Implemented various business requirements to optimize data flow logic, directly contributing to **increased sales** and operational efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Separator -->
+        <div class="border-t border-gray-700 my-12"></div>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <p>Interested in working together? I'd love to hear from you.</p>
-                    <div class="contact-links">
-                        <a href="mailto:ritwik.verma@example.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>ritwik.verma@example.com</span>
-                        </a>
-                        <a href="https://linkedin.com/in/ritwik-verma" class="contact-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
-                        </a>
-                        <a href="https://github.com/ritwikverma" class="contact-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Profile</span>
-                        </a>
-                    </div>
+        <section id="contact" class="py-12">
+            <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Get In Touch</h2>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-300 mb-6 text-center">
+                    I am actively seeking opportunities to architect and deliver next-generation data solutions. Let's connect!
+                </p>
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:ritwik2199@gmail.com" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
+                        <i class="fas fa-envelope text-xl text-blue-400 mr-3"></i>
+                        <span class="text-white text-lg font-medium">ritwik2199@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ritwik-verma/" target="_blank" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin text-xl text-blue-400 mr-3"></i>
+                        <span class="text-white text-lg font-medium">LinkedIn Profile</span>
+                    </a>
+                    <a href="tel:+918840459910" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
+                        <i class="fas fa-phone text-xl text-blue-400 mr-3"></i>
+                        <span class="text-white text-lg font-medium">+91 8840459910</span>
+                    </a>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Ritwik Verma. All rights reserved.</p>
+    <footer class="bg-gray-900 border-t border-gray-800 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-gray-500">
+            <p>&copy; 2024 Ritwik Verma. Built with expertise and passion for Data Engineering.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Simple JS for Navbar Stickiness (Optional) -->
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-sticky', 'shadow-lg');
+            } else {
+                header.classList.remove('header-sticky', 'shadow-lg');
+            }
+        });
+    </script>
 </body>
 </html>
