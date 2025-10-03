@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritwik Verma - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <h2>Ritwik Verma</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Ritwik Verma</span>
+                </h1>
+                <p class="hero-subtitle">Professional Developer & Problem Solver</p>
+                <div class="hero-buttons">
+                    <a href="#resume" class="btn btn-primary">View Resume</a>
+                    <a href="Ritwik_Verma.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Welcome to my professional portfolio. I am passionate about creating innovative solutions 
+                            and delivering high-quality results. My experience spans various technologies and domains, 
+                            allowing me to approach challenges with a comprehensive perspective.
+                        </p>
+                        <p>
+                            Below you can view my complete resume in an interactive format or download the PDF version 
+                            for your convenience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="section-title">My Resume</h2>
+                
+                <!-- Resume Controls -->
+                <div class="resume-controls">
+                    <div class="control-buttons">
+                        <button id="fullscreen-btn" class="control-btn" title="Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button id="zoom-in-btn" class="control-btn" title="Zoom In">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <button id="zoom-out-btn" class="control-btn" title="Zoom Out">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                        <a href="Ritwik_Verma.pdf" download class="control-btn" title="Download PDF">
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="Ritwik_Verma.pdf" target="_blank" class="control-btn" title="Open in New Tab">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PDF Viewer -->
+                <div class="pdf-container">
+                    <div class="pdf-loading">
+                        <div class="loader"></div>
+                        <p>Loading resume...</p>
+                    </div>
+                    <iframe 
+                        id="pdf-viewer" 
+                        src="Ritwik_Verma.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitH" 
+                        title="Ritwik Verma Resume"
+                        loading="lazy">
+                        <div class="pdf-fallback">
+                            <h3>PDF Viewer Not Supported</h3>
+                            <p>Your browser doesn't support PDF viewing. Please download the resume instead.</p>
+                            <a href="Ritwik_Verma.pdf" download class="btn btn-primary">
+                                <i class="fas fa-download"></i> Download Resume PDF
+                            </a>
+                        </div>
+                    </iframe>
+                </div>
+
+                <!-- Alternative View for Mobile -->
+                <div class="mobile-resume-info">
+                    <div class="mobile-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>View My Resume</h3>
+                        <p>For the best viewing experience on mobile, please download or open in a new tab.</p>
+                        <div class="mobile-buttons">
+                            <a href="Ritwik_Verma.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="Ritwik_Verma.pdf" download class="btn btn-secondary">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p>Interested in working together? I'd love to hear from you.</p>
+                    <div class="contact-links">
+                        <a href="mailto:ritwik.verma@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>ritwik.verma@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ritwik-verma" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/ritwikverma" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ritwik Verma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
