@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ritwik Verma | Senior Data Engineer & GCP Expert</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -20,24 +18,11 @@
             backdrop-filter: blur(10px);
             background-color: rgba(17, 24, 39, 0.8); /* dark-blue with transparency */
         }
-        /* Style for the profile picture holder */
-        .profile-placeholder {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #3b82f6; /* blue-500 */
-            transition: transform 0.3s ease-in-out;
-        }
-        .profile-placeholder:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 
 <body class="bg-gray-900 text-gray-100 antialiased">
 
-    <!-- Navbar -->
     <header id="header" class="sticky top-0 z-50 transition duration-300">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="text-xl font-extrabold text-blue-400">
@@ -51,7 +36,6 @@
                 <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-150">Contact</a>
             </div>
             <div class="md:hidden">
-                <!-- Mobile Menu Button Placeholder -->
                 <button class="text-gray-300 hover:text-blue-400 focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -61,9 +45,8 @@
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- Hero Section -->
-        <section id="home" class="py-20 md:py-32 flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-3/5">
+        <section id="home" class="py-20 md:py-32 flex flex-col items-center justify-center text-center md:text-left">
+            <div class="w-full">
                 <p class="text-lg text-blue-400 mb-2 font-semibold">Hello, I'm</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-4">
                     Ritwik Verma.
@@ -71,10 +54,10 @@
                 <h2 class="text-3xl md:text-4xl font-light text-gray-400 mb-6">
                     Senior Data Engineer | <span class="text-yellow-400">GCP Certified Expert</span>
                 </h2>
-                <p class="text-xl text-gray-300 mb-8 max-w-lg">
-                    With **5.10 Years of experience**, I architect and build highly scalable, cost-optimized data solutions on the **Google Cloud Platform**, driving data-driven decision-making for complex systems.
+                <p class="text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                    With **6+ Years of experience**, I architect and build highly scalable, cost-optimized data solutions on the **Google Cloud Platform**, driving data-driven decision-making for complex systems.
                 </p>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 justify-center md:justify-start">
                     <a href="#experience" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105">
                         View Projects
                     </a>
@@ -83,18 +66,10 @@
                     </a>
                 </div>
             </div>
-            <div class="md:w-2/5 mt-10 md:mt-0 flex justify-center">
-                <!-- *** UPDATED TO USE LOCAL PATH: images/profile.jpg *** -->
-                <img src="images/profile.png" alt="Ritwik Verma Profile" class="profile-placeholder shadow-xl" 
-                     onerror="this.onerror=null; this.src='https://placehold.co/250x250/1f2937/9ca3af?text=Profile+Photo';"
-                >
-            </div>
         </section>
 
-        <!-- Separator -->
         <div class="border-t border-gray-700 my-12"></div>
 
-        <!-- My Data Engineering Journey Section -->
         <section id="journey" class="py-12">
             <h2 class="text-4xl font-bold text-blue-400 mb-8 text-center">My Data Engineering Journey</h2>
             <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
@@ -117,15 +92,12 @@
             </div>
         </section>
 
-        <!-- Separator -->
         <div class="border-t border-gray-700 my-12"></div>
 
-        <!-- Technical Skills Section -->
         <section id="skills" class="py-12">
             <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Technical Expertise & Certifications</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Card 1: GCP Services -->
                 <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
                     <h3 class="text-2xl font-semibold text-white mb-4"><i class="fab fa-google mr-2 text-blue-400"></i> Google Cloud Platform</h3>
                     <ul class="space-y-2 text-gray-300 list-disc list-inside">
@@ -139,7 +111,6 @@
                     </p>
                 </div>
 
-                <!-- Card 2: Programming & Frameworks -->
                 <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
                     <h3 class="text-2xl font-semibold text-white mb-4"><i class="fas fa-terminal mr-2 text-blue-400"></i> Languages & Big Data</h3>
                     <ul class="space-y-2 text-gray-300 list-disc list-inside">
@@ -150,7 +121,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 3: Tools & Ops -->
                 <div class="bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-blue-500/50 transition duration-300 border border-gray-700">
                     <h3 class="text-2xl font-semibold text-white mb-4"><i class="fas fa-tools mr-2 text-blue-400"></i> DevOps & Control</h3>
                     <ul class="space-y-2 text-gray-300 list-disc list-inside">
@@ -172,21 +142,17 @@
             </div>
         </section>
 
-        <!-- Separator -->
         <div class="border-t border-gray-700 my-12"></div>
 
-        <!-- Experience & Projects Section -->
         <section id="experience" class="py-12">
             <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Key Projects & Experience</h2>
 
-            <!-- Experience Block 1 (Leading Technology Firm) -->
             <div class="relative mb-12 border-l-4 border-blue-500 pl-6">
                 <span class="absolute -left-3 top-0 h-6 w-6 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold text-white"><i class="fas fa-briefcase"></i></span>
                 <p class="text-sm font-semibold text-gray-400">Apr 2022 - Present</p>
                 <h3 class="text-3xl font-bold text-white mb-1">Senior Data Engineer</h3>
                 <p class="text-xl font-medium text-gray-300 mb-4">Persistent Systems</p>
 
-                <!-- Project 1 -->
                 <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-lg border border-gray-700">
                     <h4 class="text-xl font-semibold text-yellow-400 mb-2">GCP Electrical Asset Location Accuracy Prediction Platform</h4>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
@@ -196,7 +162,6 @@
                     </ul>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-lg border border-gray-700">
                     <h4 class="text-xl font-semibold text-yellow-400 mb-2">YouTube Data Ingestion Pipeline</h4>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
@@ -206,7 +171,6 @@
                     </ul>
                 </div>
 
-                <!-- Achievements -->
                 <div class="mt-6">
                     <h4 class="text-lg font-semibold text-white mb-2">Awards & Recognition:</h4>
                     <div class="flex flex-wrap gap-3">
@@ -217,14 +181,12 @@
                 </div>
             </div>
 
-            <!-- Experience Block 2 (Global Consulting Company) -->
             <div class="relative mb-8 border-l-4 border-gray-500 pl-6">
                 <span class="absolute -left-3 top-0 h-6 w-6 bg-gray-500 rounded-full flex items-center justify-center text-sm font-bold text-white"><i class="fas fa-laptop-code"></i></span>
                 <p class="text-sm font-semibold text-gray-400">Oct 2019 - Mar 2022</p>
                 <h3 class="text-3xl font-bold text-white mb-1">Foundational Systems Engineer</h3>
                 <p class="text-xl font-medium text-gray-300 mb-4">HCL Tech</p>
 
-                <!-- Project -->
                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
                     <h4 class="text-xl font-semibold text-yellow-400 mb-2">High-Volume Data Transaction System Design</h4>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
@@ -236,10 +198,8 @@
 
         </section>
 
-        <!-- Separator -->
         <div class="border-t border-gray-700 my-12"></div>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-12">
             <h2 class="text-4xl font-bold text-blue-400 mb-10 text-center">Get In Touch</h2>
             <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 max-w-2xl mx-auto">
@@ -247,9 +207,9 @@
                     I am actively seeking opportunities to architect and deliver next-generation data solutions. Let's connect!
                 </p>
                 <div class="flex flex-col space-y-4">
-                    <a href="mailto:ritwik21@outlook.com" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
+                    <a href="mailto:ritwikverma.bigdata@gmail.com" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
                         <i class="fas fa-envelope text-xl text-blue-400 mr-3"></i>
-                        <span class="text-white text-lg font-medium">ritwik21@outlook.com</span>
+                        <span class="text-white text-lg font-medium">ritwikverma.bigdata@gmail.com</span>
                     </a>
                     <a href="https://linkedin.com/in/ritwik-verma/" target="_blank" class="flex items-center justify-center p-4 bg-gray-700 rounded-lg hover:bg-blue-600 transition duration-300">
                         <i class="fab fa-linkedin text-xl text-blue-400 mr-3"></i>
@@ -267,7 +227,6 @@
         </div>
     </footer>
 
-    <!-- Simple JS for Navbar Stickiness (Optional) -->
     <script>
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
